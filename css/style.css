@@ -3,7 +3,7 @@
     margin: 0;
 }
 header {
-    background:linear-gradient(transparent 10%, rgb(30, 25, 25)), url('images/banner.png');
+    background:linear-gradient(transparent 10%, rgb(30, 25, 25)), url('../images/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
