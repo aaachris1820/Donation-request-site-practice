@@ -47,7 +47,7 @@ header {
 }
 /* main section */
 .donate-container {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     text-align: center;
 }
@@ -72,6 +72,7 @@ header {
     font-weight: 600;
     margin-right: 30px;
     padding: 35px 25px;
+    margin-bottom: 70px;
 }
 .btn-amount:hover {
     background-color: rgb(248, 210, 214);
@@ -84,7 +85,8 @@ header {
   border-right: 0;
   width: 85vw;
   height: 50px;
-  margin-top: 70px;
+  
+  
 }
 #donation-amount::placeholder {
     text-align: center;
@@ -94,7 +96,7 @@ header {
 }
 /* plan section */
 .donate-plan-container {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
     text-align: center;
 }
@@ -139,4 +141,280 @@ padding: 60px 40px 60px 35px;
 .plan3{
     background-color: rgb(250, 232, 210);
     padding: 60px 40px 60px 35px;
+}
+
+/* donation reason styles section */
+
+.donate-reason-1, .donate-reason-2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.donate-reason-container-1 {
+    margin-left: 100px;
+    flex: 1;
+}
+
+.donate-reason-container-2 {
+    margin-right: 100px;
+    flex: 1;
+}
+
+.donate-reason-img {
+    flex: 1;
+    margin: 0 100px;
+    width: 500px;
+    height: 600px;
+}
+
+.donate-reason-container-1 h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+.donate-reason-container-1 p {
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #797979;
+    margin-bottom: 30px;
+}
+
+.donate-reason-container-2 h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 30px;
+}
+
+.donate-reason-container-2 p {
+    font-size: 16px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: #797979;
+    margin-bottom: 30px;
+}
+
+.btn-donate-reason {
+    color: white;
+    background-color: rgb(238, 61, 87);
+    border:0 ;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 12px 16px;
+    margin-top: 25px;
+}
+
+/* subscribe section */
+
+.subscribe {
+    width: 100vw;
+    height: 90vh;
+    text-align: center;
+}
+.subscribe h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.subscribe p {
+    font-size: 17px;
+    line-height: 25px;
+    color: #6f6f6f;
+    margin: 0 25% 70px;
+}
+.email-container {
+    background-color: bisque;
+    width: 80vw;
+    height: 40vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email-container input {
+    background-color: #dfdfdf;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    padding: 12px 16px;
+    font-size: 20px;
+}
+.btn-subscribe {
+    color: white;
+    background-color: rgb(238, 61, 87);
+    border:0 ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 16px;
+}
+
+/* footer section */
+footer {
+    text-align: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: #000;
+}
+footer h1 {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    color: crimson;
+    font-weight: 700;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer p {
+    color: #dbdbdb;
+    font-weight: 500;
+}
+
+/* responsive design */
+
+@media  ( min-width:577px ) and (max-width:992px) {
+    
+    .header-text {
+        padding-top: 300px;
+    }
+    .banner-title1, .banner-title2 {
+        font-size: 4em;
+        line-height: 100px;
+    }
+    .banner-text {
+        padding: 10px;
+        margin-top: 40px;
+    }
+    #donation-amount {
+        margin-top: 0;
+    }
+    .btn-amount {
+        margin-bottom: 20px;
+        font-size: 3em;
+    }
+   
+    .donate-header {
+        font-size: 5em;
+    }
+    .donate-plan-container {
+        height: auto;
+    }
+    .plan-container {
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .plan-header {
+        font-size: 3em;
+    }
+    .plan1, .plan2, .plan3 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .donate-reason-1 {
+        flex-direction: column-reverse ;
+        margin: 0;
+        margin-left: 10px;
+        height: auto;
+        margin-top: 100px;
+    }
+    .donate-reason-2 {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 100px;
+        margin-left: 10px;
+        height: auto;
+    }
+    .donate-reason-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .subscribe {
+        height: auto;
+        margin-top: 100px;
+    }
+    .email-container {
+        width: 100%;
+    }
+    footer {
+        height: 300px;
+    }
+}
+
+@media  ( max-width:576px ) {
+    
+    .header-text {
+        padding-top: 100px;
+    }
+    .banner-title1, .banner-title2 {
+        font-size:3em;
+        line-height: 50px;
+    }
+    .banner-text {
+        padding: 10px;
+        margin-top: 40px;
+    }
+    #donation-amount {
+        margin-top: 0;
+        
+    }
+    .btn-amount {
+        margin-bottom: 20px;
+        font-size: 2em;
+    }
+   
+    .donate-header {
+        font-size: 3.5em;
+    }
+    .donate-plan-container {
+        height: auto;
+    }
+    .plan-container {
+        flex-direction: column;
+        margin: 10px;
+    }
+    .plan-header {
+        font-size: 3em;
+    }
+    .plan1, .plan2, .plan3 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .donate-reason-1 {
+        flex-direction: column-reverse ;
+        margin: 0;
+        margin-left: 10px;
+        height: auto;
+        margin-top: 100px;
+    }
+    .donate-reason-2 {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 100px;
+        margin-left: 10px;
+        height: auto;
+    }
+    .donate-reason-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .subscribe {
+        height: auto;
+        margin-top: 100px;
+    }
+    .email-container {
+        width: 100%;
+    }
+    footer {
+        height: 300px;
+    }
 }
