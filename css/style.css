@@ -351,6 +351,10 @@ footer p {
 
 @media  ( max-width:576px ) {
     
+    header {
+        background-position: center;
+    }
+
     .header-text {
         padding-top: 100px;
     }
