@@ -6,8 +6,8 @@ header {
     background:linear-gradient(transparent 10%, rgb(30, 25, 25)), url('../images/banner.png');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    width: 100vw;   
+    background-position: right;
+    width: 100%;   
 }
 
 .header-text {
@@ -47,7 +47,7 @@ header {
 }
 /* main section */
 .donate-container {
-    height: 100vh;
+    
     width: 100vw;
     text-align: center;
 }
@@ -73,6 +73,7 @@ header {
     margin-right: 30px;
     padding: 35px 25px;
     margin-bottom: 70px;
+    flex: 1;
 }
 .btn-amount:hover {
     background-color: rgb(248, 210, 214);
@@ -84,9 +85,11 @@ header {
   border-left: 0;
   border-right: 0;
   width: 85vw;
-  height: 50px;
-  
-  
+  height: 50px; 
+}
+.amount-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 #donation-amount::placeholder {
     text-align: center;
@@ -352,7 +355,9 @@ footer p {
 @media  ( max-width:576px ) {
     
     header {
-        background-position: center;
+        background-position: right;
+        padding-bottom: 100px;
+        max-width: 777px;
     }
 
     .header-text {
@@ -370,6 +375,12 @@ footer p {
         margin-top: 0;
         
     }
+
+    .amount-container {
+        flex-direction: column;
+        padding-left: 30px;
+    }
+
     .btn-amount {
         margin-bottom: 20px;
         font-size: 2em;
@@ -391,6 +402,12 @@ footer p {
     .plan1, .plan2, .plan3 {
         margin-right: 0;
         margin-bottom: 10px;
+    }
+
+    .donate-reason-container-1,.donate-reason-container-2 {
+        margin-left: 0 ;
+        margin-right: 0;
+        text-align: center;
     }
     .donate-reason-1 {
         flex-direction: column-reverse ;
